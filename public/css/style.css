@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body , .login-bg{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #bbd2c5, #536976);
+    position: relative;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/** start login style*/
+
+.login-form ,.register-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.login-form{
+    width: 350px;
+}
+.register-form{
+    width: 450px;
+}
+.form-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    color: rgb(17, 104, 104);
+
+}
+
+.container{
+    width: 90%;
+}
+
+label{
+    color: rgb(85, 87, 86);
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.btn-submit{
+    width: 100%;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #045577, #40e495, #30dd8a, #045577);
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    transition:  0.3s ease-in-out all;
+    background-size: 410% 100%;
+
+}
+
+.btn-submit:hover{
+    background-position: 90% 0;
+}
+
+
+/** End Login style **/
+
+
+/** start hr page style **/
+
+.main-content{
+    width:95%;
+    background-color: rgba(255, 255, 255, .5);
+    height: 90vh;
+    overflow: scroll;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+
+}
+
+.menu-side{
+    width: 20%;
+    border-left: 1px solid #fff;
+    height: 100vh;
+    float: right;
+}
+.main-side{
+    width: 80%;
+    float: right;
+}
+
+.logo{
+    text-align: center;
+    font-family: fantasy;
+    color: rgb(17, 104, 104);
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+
+.menu-side ul {
+    list-style: none;
+}
+.menu-side ul a li{
+    color: rgb(17, 104, 104);
+    font-size: 14px;
+    text-align: center;
+    font-family: system-ui;
+    font-weight: bolder;
+    padding: 10px;
+    transition: ease-in-out all .2s;
+}
+
+.menu-side ul a {
+    text-decoration: none;
+
+}
+.menu-side ul a li:hover,.menu-side ul a .active {
+   background: rgb(17, 104, 104);
+   color: #fff;
+}
+
+.main-side h1{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 18.5px;
+    border-bottom: 1px solid #fff;
+    font-family: system-ui;
+}
+
+.main-side form{
+    padding: 20px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    text-align: center;
+}
+
+.green{
+    color: seagreen;
+}
+
+.red{
+    color: red;
+}
+
+.logout{
+    position: fixed;
+    right: 8%;
+    bottom:8%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.container h1{
+    color:rgb(17, 104, 104); ;
+}
+
+
+
+
+
+
+/** End hr page style **/
+/** start emp page style **/
+.emp-info{
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 20px;
+    font-family: system-ui;
+    color: rgb(25, 61, 85);
+}
+.changepassword-form input{
+ margin-bottom: 15px;
+}
+/** End emp page style **/
+
+.p , .a{
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+.p{
+    background: yellowgreen;
+}
+.a{
+    background: red;
+}
+
+.statistics p{
+    font-size:20px;
+}
+
+
