@@ -16,6 +16,7 @@ use App\Http\Controllers\HrController;
 Auth::routes();
 
 Route::get('/', [HrController::class, 'test']);
+Route::get('/myProfile', [HrController::class, 'myProfile']);
 Route::get('/home', [HrController::class, 'test']);
 Route::post('/home', [HrController::class, 'test']);
 Route::get('/empsattendance', [HrController::class, 'attendance']);

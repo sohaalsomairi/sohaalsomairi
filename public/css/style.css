@@ -85,7 +85,7 @@ label{
     width:95%;
     background-color: rgba(255, 255, 255, .5);
     height: 90vh;
-    overflow: scroll;
+    overflow: hidden;
     border-radius: 5px;
     border: 1px solid #fff;
     margin: 0 auto;
@@ -141,6 +141,7 @@ label{
     padding: 18.5px;
     border-bottom: 1px solid #fff;
     font-family: system-ui;
+    text-align: center;
 }
 
 .main-side form{
@@ -181,11 +182,39 @@ label{
 /** End hr page style **/
 /** start emp page style **/
 .emp-info{
+    height: 200px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    border:1px solid #fff;
     font-weight: bolder;
     font-size: 15px;
     padding: 20px;
     font-family: system-ui;
     color: rgb(25, 61, 85);
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    top: 40px;
+}
+
+.emp-info .data{
+    position: absolute;
+    bottom: 10px;
+    right: 13%;
+}
+.emp-info .img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(170, 170, 170);
+    background-color: seagreen;
+    right: 30%;
+    top: -20%;
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 .changepassword-form input{
  margin-bottom: 15px;

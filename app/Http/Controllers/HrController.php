@@ -37,6 +37,10 @@ class HrController extends Controller
              }
     }
 
+    public function myProfile(){
+        return view('profile',['title'=>'الصفحة الشخصية']);
+    }
+
 
 
      public function attendance(){
@@ -85,9 +89,12 @@ class HrController extends Controller
          $user = User::find(Auth::user()->id);
          if($user && ($r->newpassword == $r->confirmpassword)){
           $user->password = Hash::make($r->newpassword);
+          $user->save();
+          $msg = 'تم تغيير كلمة المرور بنجاح ';
          }
          else{
-             return redirect()->back()->with(['msg'=>'يجب ان تكون الكلمتان متطابقتان !']);
+             $msg = 'يجب ان تكون الكلمتان متطابقتان !';
+             return redirect()->back()->with(['msg'=>$msg]);
          }
      }
 
