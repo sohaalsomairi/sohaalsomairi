@@ -22,7 +22,7 @@
                 <ul>
                     <a href="/myProfile" class="{{($title =='البيانات الشخصية')?'active':''}}" ><li> <i class="fas fa-user"></i> الصفحة الشخصية</li></a>
                     <a href="/empsattendance" class="{{($title =='حضور وغياب الموظفين')?'active':''}}" ><li> <i class="fas fa-users"></i> حضور وغياب الموظفين</li></a>
-                    <a href="/empsattendancestatistics" class="{{($title == 'إحصائيات بالحضور و الغياب')?'active':''}}"> <li> <i class="fas fa-chart"></i> إحصائيات بالحضور و الغياب</li></a>
+                    <a href="/empsattendancestatistics" class="{{($title == 'إحصائيات بالحضور و الغياب')?'active':''}}"> <li> <i class="fas fa-chart-bar"></i> إحصائيات بالحضور و الغياب</li></a>
                     <a class="logout" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                document.getElementById('logout-form').submit();">
