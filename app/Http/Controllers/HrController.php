@@ -33,7 +33,7 @@ class HrController extends Controller
                 return view('hr',['title'=>'الصفحة الرئيسية' ,'emps'=>$emps,'msg'=>$msg]);
              }
              else{
-                 return view('profile',['title'=>'الصفحة الرئيسية' ,'emps'=>$emps,'msg'=>$msg]);
+                 return view('profile',['title'=>'الصفحة الشخصية' ,'emps'=>$emps,'msg'=>$msg]);
              }
     }
 
@@ -55,7 +55,7 @@ class HrController extends Controller
          $emps=[];
          $emp = emps::where('empnum',$r->empid)->get()->first();
 
-             return view('hr',['title'=>'الصفحة الرئيسية' ,'emps'=>$emps,'emp'=>$emp]);
+             return view('hr',['title'=>'حضور وغياب الموظفين' ,'emps'=>$emps,'emp'=>$emp]);
 
 
      }
